@@ -1,0 +1,32 @@
+<table *ngIf="covidCase" >
+    <tr>
+        <td><label for="location"><b>Location: </b></label></td>
+        <td><input id="location" [(ngModel)]="covidCase.location" placeholder="Location" type="text" (focus)= "autocompleteLocation()"></td>
+    </tr>
+    <tr>
+        <td><label for="lat"><b>Latitude: </b></label></td>
+        <td><input id="lat" [(ngModel)]="covidCase.lat" placeholder="Latitude" type="number"></td>
+    </tr>
+    <tr>
+        <td><label for="lng"><b>Longtitude: </b></label></td>
+        <td><input id="lng" [(ngModel)]="covidCase.lng" placeholder="Longtitude" type="number"></td>
+    </tr>
+    <tr>
+        <td><label for="phoneNum"><b>Phone Number: </b></label></td>
+        <td><input id="phoneNum" [(ngModel)]="covidCase.phoneNum" placeholder="Phone Number" type="text"></td>
+    </tr>
+    <tr>
+        <td><label for="personReported"><b>Person Reported: </b></label></td>
+        <td><input id="personReported" [(ngModel)]="covidCase.personReported" placeholder="Person Reported" type="text"></td>
+    </tr>
+    <tr>
+        <td><label for="date"><b>Date of visit: </b></label></td>
+        <td><input id="date" [(ngModel)]="covidCase.date" placeholder="Date of visit" type="text"></td>
+    </tr>
+    <tr>
+        <td><label for="extra"><b>Extra info: </b></label></td>
+        <td><input id="extra" [(ngModel)]="covidCase.extra" placeholder="Extra info" type="text"></td>
+    </tr>
+</table> 
+<button (click)="goBack()">Save</button>
+<div id="map-canvas"></div>

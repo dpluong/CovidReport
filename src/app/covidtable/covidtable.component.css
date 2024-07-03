@@ -1,0 +1,43 @@
+.covidCases {
+    margin: 1em 0 -1em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 50em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.covidCases .person-cell {
+    display: inline-block;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 1em;
+    height: 1.8em;
+    margin-right: .8em;
+    margin-left: -13px;
+    margin-bottom: 1em;
+  }
+
+  .covidCases .date-cell {
+    display: inline-block;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#181a0d;
+    line-height: 1em;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 0 4px 4px 0;
+    margin-left: -13px;
+  }
+
+.covidCases .badge {
+    display: inline-block;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#e01430;
+    line-height: 1em;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px ;
+  }
+  

@@ -1,0 +1,26 @@
+<div>CREATE A REPORT</div>
+<form [formGroup]="reportForm" (ngSubmit)="onSubmit(true)">
+    <label for="location"><b>Location: </b></label>
+    <input id="location" placeholder="Location" [(ngModel)]="updateCase.location" type="text" formControlName="location">
+    <br>
+    <label for="lat"><b>Latitude: </b></label>
+    <input id="lat" placeholder="Latitude" [(ngModel)]="updateCase.lat" type="number" formControlName="lat">
+    <br>
+    <label for="lng"><b>Longtitude: </b></label>
+    <input id="lng" placeholder="Longtitude" [(ngModel)]="updateCase.lng" type="number" formControlName="lng">
+    <br>
+    <label for="phoneNum"><b>Phone Number: </b></label>
+    <input id="phoneNum" placeholder="Phone Number" type="text" formControlName="phoneNum">
+    <br>
+    <label for="personReported"><b>Person Reported: </b></label>
+    <input id="personReported" placeholder="Person Reported" type="text" formControlName="personReported">
+    <br>
+    <label for="date"><b>Date: </b></label>
+    <input id="date" placeholder="Date" type="text" formControlName="date">
+    <br>
+    <label for="extra"><b>Extra: </b></label>
+    <input id="extra" placeholder="Extra" type="text" formControlName="extra">
+    <br>
+    <button type="submit" id="confirm">Confirm</button>
+</form>
+<div id="map-canvas"></div>

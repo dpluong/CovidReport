@@ -1,0 +1,20 @@
+<app-covidmap></app-covidmap>
+<ul class="covidCases">
+    <li><span class="badge">Location</span>
+    <span class="person-cell">Person Reported</span>
+    <span class="date-cell">Date</span></li>
+</ul>
+<ul class="covidCases">
+    <li *ngFor="let covidCase of covidCases">
+        <span class="badge">{{covidCase.location}}</span>
+        <span class="person-cell">{{covidCase.personReported}}</span>  
+        <span class="date-cell">{{covidCase.date}}</span>
+        <button (click) ="onRemove(covidCase)" class="remove-btn">Remove</button>
+        <a routerLink="/detail/{{covidCase.id}}">
+            <button  class="info-btn">More Info</button>
+        </a>
+    </li>
+</ul>
+<app-report-form (submitted) = "onSubmitted($event)"></app-report-form>
+
+ 
